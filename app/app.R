@@ -1,14 +1,15 @@
 library(shiny)
 library(bslib)
+library(bsicons)
 library(tidyverse)
+library(lubridate)
 library(survival)
 library(survminer)
+library(ggpubr)   # <--- survminer 的依賴
 library(plotly)
 library(DT)
-library(bsicons)
-library(scales)   # 強制包含
-library(munsell)  # 強制包含 (這行最重要)
-library(colorspace) # 強制包含
+library(scales)
+library(munsell)
 
 # --- 1. 數據預處理 (優化編碼以確保穩定) ---
 df <- read_csv("Netflix_Title_Cleaned.csv") %>%
