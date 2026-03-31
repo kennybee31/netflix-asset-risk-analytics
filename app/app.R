@@ -2,13 +2,12 @@ library(shiny)
 library(bslib)
 library(bsicons)
 library(tidyverse)
-library(lubridate)
 library(survival)
-library(ggpubr)   
+library(ggfortify) # 替代 survminer，避開 survMisc 報錯
 library(plotly)
 library(DT)
 library(scales)
-library(munsell)
+library(munsell)   # 強制宣告，確保顏色渲染零件被打包
 
 # --- 1. 數據預處理 (優化編碼以確保穩定) ---
 df <- read_csv("Netflix_Title_Cleaned.csv") %>%
