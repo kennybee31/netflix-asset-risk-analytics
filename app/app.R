@@ -4,8 +4,7 @@ library(bsicons)
 library(tidyverse)
 library(lubridate)
 library(survival)
-
-library(ggpubr)   # <--- survminer 的依賴
+library(ggpubr)   
 library(plotly)
 library(DT)
 library(scales)
